@@ -42,12 +42,30 @@ const Navbar = () => {
 					<DotsVerticalIcon className="h-8 " />
 				</div>
 				<div className="hidden  justify-center content-center h-screen md:relative  md:w-auto md:h-auto  md:flex md:gap-2 md:content-center">
-					<Link to="/register">
+					{!isLoggedIn && (
+						<Link
+							to="/register"
+							style={{ textDecoration: "none", color: "inherit" }}
+						>
+							<p>Register</p>
+						</Link>
+					)}
+					{!isLoggedIn && (
+						<Link
+							to="/login"
+							style={{ textDecoration: "none", color: "inherit" }}
+						>
+							<p>Login</p>
+						</Link>
+					)}
+					{isLoggedIn && <p>{userName}</p>}
+					{isLoggedIn && <p onClick={handleLogOut}>Logout</p>}
+					{/* <Link to="/register">
 						<p>Register</p>
 					</Link>
 					<Link to="/login">
 						<p>Sign In</p>
-					</Link>
+					</Link> */}
 					<Link to={isLoggedIn ? "/cart" : "/login"}>
 						<Badge badgeContent={cartProductsCount} color="primary" max={9}>
 							<ShoppingCartOutlined styled={{ color: "teal" }} />
