@@ -1,8 +1,9 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import Announcement from "../components/Announcement";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 import Sliders from "../components/Sliders";
 import TrendingProducts from "../components/TrendingProducts";
 const Home = () => {

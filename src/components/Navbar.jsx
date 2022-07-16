@@ -23,8 +23,12 @@ const Navbar = () => {
 					<DotsVerticalIcon className="h-8 " />
 				</div>
 				<div className="hidden  justify-center content-center h-screen md:relative  md:w-auto md:h-auto  md:flex md:gap-2 md:content-center">
-					<p>Register</p>
-					<p>Sign In</p>
+					<Link to="/register">
+						<p>Register</p>
+					</Link>
+					<Link to="/login">
+						<p>Sign In</p>
+					</Link>
 					<ShoppingCartIcon className="h-8" />
 				</div>
 			</nav>

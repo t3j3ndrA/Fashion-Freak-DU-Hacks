@@ -3,12 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Cart from "./pages/Cart";
 const App = () => {
 	return (
 		<BrowserRouter>
-			{/* <Navbar /> */}
 			<Routes>
 				<Route path="/" element={<Home />} />
 			</Routes>
@@ -17,6 +17,9 @@ const App = () => {
 			</Routes>
 			<Routes>
 				<Route path="/register" element={<Register />} />
+			</Routes>
+			<Routes>
+				<Route path="/cart" element={<Cart />} />
 			</Routes>
 			{/* <Footer /> */}
 		</BrowserRouter>

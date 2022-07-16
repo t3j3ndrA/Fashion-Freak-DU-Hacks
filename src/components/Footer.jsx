@@ -37,7 +37,7 @@ const Footer = () => {
 				</button>
 			</div>
 
-			<div className="flex mx-16 pt-4 flex-col gap-1.5">
+			<div className="flex mx-16 pt-4 flex-col gap-1.5 md:hidden lg:block">
 				<p className="text-3xl font-extrabold">Stay In touch</p>
 				<input
 					type="text"
