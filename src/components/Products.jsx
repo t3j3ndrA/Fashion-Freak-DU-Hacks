@@ -88,11 +88,13 @@ const Container = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	flex-grow: 0;
-	/* align-items: flex-start; */
 	justify-content: center;
-	/* justify-items: flex-start; */
 	gap: 4px;
 	margin: 16px 4px;
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 `;
 
 export default Products;

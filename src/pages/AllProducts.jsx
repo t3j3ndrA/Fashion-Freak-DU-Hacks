@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Newsletter from "../components/Newsletter";
+// import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
@@ -55,7 +55,7 @@ const AllProducts = () => {
 				</FilterBox>
 			</FilterContainer>
 			<Products category={category} filters={filters} sort={sort} />
-			<Newsletter />
+			{/* <Newsletter /> */}
 			<Footer />
 		</>
 	);

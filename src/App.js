@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Cart from "./pages/Cart";
+import AllProducts from "./pages/AllProducts";
+import SingleProduct from "./pages/SingleProduct";
 const App = () => {
 	return (
 		<BrowserRouter>
@@ -20,6 +22,12 @@ const App = () => {
 			</Routes>
 			<Routes>
 				<Route path="/cart" element={<Cart />} />
+			</Routes>
+			<Routes>
+				<Route path="/products/:category" element={<AllProducts />} />
+			</Routes>
+			<Routes>
+				<Route path="/product/:id" element={<SingleProduct />} />
 			</Routes>
 			{/* <Footer /> */}
 		</BrowserRouter>

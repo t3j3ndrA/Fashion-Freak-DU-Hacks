@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Newsletter from "../components/Newsletter";
+// import Newsletter from "../components/Newsletter";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
 import API from "../axios/instance";
@@ -14,6 +14,7 @@ import { addToCart } from "../redux/cartSlice";
 const SingleProduct = () => {
 	const location = useLocation();
 	const id = location.pathname.split("/")[2];
+	console.log("Id is : ", id);
 	const [product, setProduct] = useState({});
 	const [productCount, setProductCount] = useState(1);
 	const [filters, setFilters] = useState({});
@@ -42,6 +43,7 @@ const SingleProduct = () => {
 		const getProductById = async () => {
 			const res = await API.get("products/find/" + id);
 			setProduct(res.data.data.product);
+			console.log(product);
 		};
 		id && getProductById();
 	}, []);
@@ -96,7 +98,7 @@ const SingleProduct = () => {
 					</PurchaseContainer>
 				</InfoContainer>
 			</ProductWrapper>
-			<Newsletter />
+			{/* <Newsletter /> */}
 			<Footer />
 		</>
 	);

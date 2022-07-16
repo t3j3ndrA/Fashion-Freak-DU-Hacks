@@ -49,12 +49,12 @@ const IconsContainer = styled.div`
 const Container = styled.div`
 	position: relative;
 	margin: 15px 15px;
-	flex: 20%;
-	/* align-self: ; */
-	max-width: 20%;
 	&:hover ${IconsContainer} {
 		background-color: #0000006e;
 		opacity: 1;
+	}
+	@media screen and (min-width: 768px) {
+		width: 250px;
 	}
 	background-color: #f3f3f3;
 `;
