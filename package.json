@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t3j3ndrA/Fashion-Freak-DU-Hacks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t3j3ndrA/Fashion-Freak-DU-Hacks/issues"
+  },
+  "homepage": "https://github.com/t3j3ndrA/Fashion-Freak-DU-Hacks#readme"
+}
