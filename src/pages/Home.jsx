@@ -8,7 +8,9 @@ import TrendingProducts from "../components/TrendingProducts";
 const Home = () => {
 	return (
 		<div>
+			<Navbar />
 			<Announcement />
+
 			<div className="mt-2"></div>
 			<Sliders />
 			<p className="my-3 text-center font-semibold text-4xl md:text-5xl ">
