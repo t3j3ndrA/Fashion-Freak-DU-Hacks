@@ -1,9 +1,9 @@
 import React from "react";
-import { Nav } from "react-bootstrap";
 import Announcement from "../components/Announcement";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Products from "../components/Products";
 import Sliders from "../components/Sliders";
 import TrendingProducts from "../components/TrendingProducts";
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
 			<p className="my-3 text-center font-semibold text-4xl md:text-5xl ">
 				Trending Products
 			</p>
-			<TrendingProducts />
+			<Products />
 			<Footer />
 		</div>
 	);
