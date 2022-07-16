@@ -8,11 +8,16 @@ app.use(cors());
 // Dotenv Configuration
 dotenv.config();
 
-// Middlewares
-// To use API in front-end
+// Routes importing
+const usersRoute = require("./routers/users");
+const authRoute = require("./routers/auth");
 
 // To use JSON data
 app.use(express.json());
+
+// Routes
+app.use("/api/users", usersRoute);
+app.use("/api/auth", authRoute);
 
 // DB Connection
 mongoose
