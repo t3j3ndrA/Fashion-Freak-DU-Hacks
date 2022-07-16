@@ -12,7 +12,7 @@ const Categories = () => {
 
 const CategoryView = (item) => {
 	return (
-		<div className="rounded-sm self-center border-purple-500 border-">
+		<div className="rounded-sm self-center border-purple-500 ">
 			<img src={item.img} />
 		</div>
 	);

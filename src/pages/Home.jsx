@@ -4,7 +4,7 @@ import Announcement from "../components/Announcement";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
 import Sliders from "../components/Sliders";
-
+import TrendingProducts from "../components/TrendingProducts";
 const Home = () => {
 	return (
 		<div>
@@ -15,6 +15,10 @@ const Home = () => {
 				Popular Categories
 			</p>
 			<Categories />
+			<p className="my-3 text-center font-semibold text-4xl md:text-5xl ">
+				Trending Products
+			</p>
+			<TrendingProducts />
 			<Footer />
 		</div>
 	);
