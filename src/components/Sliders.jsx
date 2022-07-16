@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 const Sliders = () => {
 	return (
-		<div className="m-5">
+		<div className="hidden md:block">
 			<Carousel fade>
 				<Carousel.Item>
 					<img
