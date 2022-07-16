@@ -11,6 +11,7 @@ dotenv.config();
 // Routes importing
 const usersRoute = require("./routers/users");
 const authRoute = require("./routers/auth");
+const productRoute = require("./routers/products");
 
 // To use JSON data
 app.use(express.json());
@@ -18,6 +19,7 @@ app.use(express.json());
 // Routes
 app.use("/api/users", usersRoute);
 app.use("/api/auth", authRoute);
+app.use("/api/products", productRoute);
 
 // DB Connection
 mongoose
@@ -27,4 +29,4 @@ mongoose
 
 // Server Listening...
 const msg = `Service is running on port 5001`;
-app.listen(process.env.PORT || 5001, () => console.log(msg));
+app.listen(process.env.PORT || 5009, () => console.log(msg));
