@@ -119,6 +119,8 @@ const ProductImage = styled.img`
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+	border-radius: 20px;
+	overflow: hidden;
 `;
 
 const InfoContainer = styled.div`
@@ -126,7 +128,8 @@ const InfoContainer = styled.div`
 `;
 
 const ProductTitle = styled.h2`
-	font-weight: 350;
+	font-weight: bold;
+	font-size: x-large;
 `;
 
 const ProductDesc = styled.p`

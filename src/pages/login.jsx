@@ -100,7 +100,8 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h2`
-	font-weight: 250;
+	font-weight: bold;
+	font-size: x-large;
 `;
 
 const Form = styled.form`

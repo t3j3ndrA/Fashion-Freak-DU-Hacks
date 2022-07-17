@@ -31,8 +31,8 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="mb-12 md:mb-16">
-			<nav className="w-full bg-white z-10 flex justify-around items-center fixed top-0 shadow-md">
+		<div className="">
+			<nav className="w-full bg-white z-10 flex justify-around items-center sticky  shadow-md">
 				<div>
 					<Link to="/">
 						<img
