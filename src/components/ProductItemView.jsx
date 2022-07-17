@@ -34,6 +34,7 @@ const ProductItemView = ({ item }) => {
 
 const IconsContainer = styled.div`
 	position: absolute;
+	border-radius: 12px;
 	display: flex;
 	gap: 8px;
 	top: 0;
@@ -48,11 +49,16 @@ const IconsContainer = styled.div`
 
 const Container = styled.div`
 	position: relative;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 	margin: 15px 15px;
+	border-radius: 12px;
+	/* border: 1px solid blue; */
+	padding: 10px 5px;
 	&:hover ${IconsContainer} {
 		background-color: #0000006e;
 		opacity: 1;
 	}
+
 	@media screen and (min-width: 768px) {
 		width: 250px;
 	}
@@ -60,13 +66,18 @@ const Container = styled.div`
 `;
 const ImgContainer = styled.div`
 	width: 100%;
+
 	height: 55vh;
 `;
 const Img = styled.img`
 	width: 100%;
 	height: 100%;
+	border-radius: 12px;
 	object-fit: cover;
 	object-position: top;
+	&:hover {
+		scale: 1.2;
+	}
 `;
 
 const Icon = styled.div`
