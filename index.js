@@ -12,6 +12,10 @@ dotenv.config();
 const usersRoute = require("./routers/users");
 const authRoute = require("./routers/auth");
 const productRoute = require("./routers/products");
+const cartRoute = require("./routers/cart");
+const orderRoute = require("./routers/order");
+const checkoutRoute = require("./routers/stripe");
+const razorRoute = require("./routers/razor");
 
 // To use JSON data
 app.use(express.json());
@@ -20,7 +24,10 @@ app.use(express.json());
 app.use("/api/users", usersRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/products", productRoute);
-
+app.use("/api/cart", cartRoute);
+app.use("/api/orders", orderRoute);
+app.use("/api/checkout", checkoutRoute);
+app.use("/api/payment", razorRoute);
 // DB Connection
 mongoose
 	.connect(process.env.MONGO_URI)
@@ -28,5 +35,5 @@ mongoose
 	.catch((e) => console.log("err >> ", e));
 
 // Server Listening...
-const msg = `Service is running on port 5001`;
-app.listen(process.env.PORT || 5009, () => console.log(msg));
+const msg = `Service is running on port 6000`;
+app.listen(process.env.PORT || 6000, () => console.log(msg));
