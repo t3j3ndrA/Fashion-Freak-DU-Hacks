@@ -111,7 +111,7 @@ router.post("/success", async (req, res) => {
 			if (error) {
 				res.json({
 					success: false,
-					msg: "We are facing some issue in sending you a mail.",
+					msg: "Order Placed!",
 				});
 				return;
 			}
